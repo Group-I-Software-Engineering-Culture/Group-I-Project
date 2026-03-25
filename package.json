@@ -23,6 +23,7 @@
   "devDependencies": {
     "eslint": "^8.57.0",
     "eslint-config-portsoc": "^1.0.1",
+    "eslint-plugin-security": "^4.0.0",
     "supertest": "^7.2.2",
     "vitest": "^4.0.18"
   },

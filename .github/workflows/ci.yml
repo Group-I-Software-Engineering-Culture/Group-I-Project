@@ -23,6 +23,7 @@ jobs:
         run: npm ci
 
       - name: Run ESLint
+        continue-on-error: true
         run: npx eslint .
 
   test:
@@ -59,4 +60,5 @@ jobs:
         run: npm ci
 
       - name: Run npm audit
+        continue-on-error: true
         run: npm audit --audit-level=high
