@@ -21,8 +21,7 @@ jobs:
         run: npm ci
 
       - name: Run ESLint
-        continue-on-error: true
-        run: npx eslint .
+        run: npx eslint . || echo "::warning::ESLint found issues (non-blocking)"
 
   test:
     name: Vitest Unit & Integration Tests
@@ -60,8 +59,7 @@ jobs:
         run: npm ci
 
       - name: Run npm audit
-        continue-on-error: true
-        run: npm audit --audit-level=high
+        run: npm audit --audit-level=high || echo "::warning::npm audit found vulnerabilities (non-blocking)"
 
   build:
     name: Docker Build
