@@ -1,2 +1,4 @@
 # Node modules (never upload)
 node_modules/
+
+.DS_Store

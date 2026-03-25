@@ -102,5 +102,6 @@ const port = 8080;
 if (process.env.NODE_ENV !== 'test') {
   app.listen(port, () => {
     console.log(`Server listening on Port:${port}`);
+    console.log(`→ http://localhost:${port}`);
   });
 }
