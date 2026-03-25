@@ -1,4 +1,17 @@
 # Node modules (never upload)
 node_modules/
 
+# Environment variables
+.env
+
+# SQLite databases
+*.sqlite
+
+# macOS
 .DS_Store
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
